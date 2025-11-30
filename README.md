@@ -43,5 +43,5 @@ However, financial data is noisier and less structured than language, making pat
 | **Input Layer** | `nn.Embedding(vocab_size, d_model)` - discrete tokens | `nn.Linear(num_features, d_model)` - continuous features |
 | **Output Layer** | `nn.Linear(d_model, vocab_size)` - softmax over vocabulary | `nn.Linear(d_model, 1)` - single regression value |
 | **Loss Function** | Cross-entropy (classification) | Mean Squared Error (regression) |
-| **Evaluation** | Perplexity, bits-per-character, qualitative samples | RMSE, MAE, Mincer-Zarnowitz R², Sharpe ratio |
+| **Evaluation** | Perplexity, bits-per-character, qualitative samples | RMSE, MAE, Mincer-Zarnowitz R² |
 | **Data Split** | Random or sequential (order matters less for training) | Strictly chronological (no future data leakage) |
